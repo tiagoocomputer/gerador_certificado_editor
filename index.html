@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Certificados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Certificados</h1>
+        <div class="form-container">
+            <textarea id="participantName" placeholder="Digite os nomes dos participantes&#10;Um nome por linha" rows="5"></textarea>
+            <textarea id="customText" placeholder="Digite o texto que aparecerá abaixo do nome no certificado" rows="3">Concluiu com êxito a capacitação em Educação Inclusiva, realizada no 
+dia 09 de maio de 2025, com carga horária total de 2 (duas) horas.
+Com ênfase em TEA, TDAH, TOD e Síndrome de Down.</textarea>
+            <button onclick="addParticipants()">Adicionar Nomes</button>
+        </div>
+
+        <div class="participants-list">
+            <h2>Lista de Participantes</h2>
+            <ul id="namesList"></ul>
+            <button id="generateAllBtn" onclick="generateAllCertificates()" style="display: none;">Gerar Certificados em PDF</button>
+        </div>
+
+        <div id="certificateContainer" class="certificate-container">
+            <div id="certificate" class="certificate">
+                <img src="certificado.png" alt="Modelo de Certificado" class="certificate-bg">
+                <div class="certificate-content">
+                    <p id="participantText"></p>
+                    <p id="certificateCustomText"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-container {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 150px;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 200px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.participants-list {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#namesList {
+    list-style: none;
+    text-align: left;
+    margin: 20px 0;
+}
+
+#namesList li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#namesList li:last-child {
+    border-bottom: none;
+}
+
+.participant-name {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.button-group {
+    display: flex;
+    gap: 8px;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    padding: 5px 10px;
+    font-size: 14px;
+    min-width: auto;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    font-size: 14px;
+    min-width: auto;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.certificate-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.certificate {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.certificate-bg {
+    width: 100%;
+    height: auto;
+}
+
+.certificate-content {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+#participantText {
+    font-family: 'Cormorant SC', serif;
+    font-size: 55px;
+    color: #a17b41;
+    margin: 0;
+    padding: 90px 20px 0px 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+#certificateCustomText {
+    font-family: Cambria, serif;    /* Define a fonte principal como Cambria e serif como fonte reserva */
+    font-size: 25px;                /* Define o tamanho da fonte como 25 pixels */
+    color: #333;                    /* Define a cor do texto como um tom de cinza escuro */
+    margin: -10px 0 0 0;            /* Adiciona margem negativa no topo para aproximar do nome */
+    padding: 10px 122px;            /* Adiciona espaçamento interno: 10px em cima/baixo e 122px nas laterais */
+    line-height: 1.4;               /* Define a altura da linha como 1.4 vezes o tamanho da fonte */
+}
+
+#generateAllBtn {
+    margin-top: 20px;
+    background-color: #2196F3;
+}
+
+#generateAllBtn:hover {
+    background-color: #1976D2;
+} 
